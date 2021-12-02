@@ -1,0 +1,25 @@
+.navigation-bar {
+  background: $--ba-color-lightgrey;
+
+  &__inner {
+    @include content-container;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div:not(.navigation-bar__logo) {
+      flex: 1;
+    }
+  }
+
+  &__logo {
+    height: 50px;
+    flex: none;
+
+    img {
+      display: block;
+      max-height: 100%;
+    }
+  }
+}

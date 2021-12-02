@@ -1,0 +1,27 @@
+.search-bar {
+  position: relative;
+  width: 46rem;
+
+  &__submit {
+    position: absolute;
+    right: 13px;
+    top: 12px;
+
+    background: none;
+    border: none;
+
+    svg {
+      fill: $--ba-font-secondary;
+    }
+  }
+
+  &__search-input {
+    padding: 1em 1.25em;
+    border: none;
+    border-radius: $--ba-border-radius--full;
+
+    &--big {
+      width: 100%
+    }
+  }
+}
